@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+gem 'rails', '~> 4.0.1'
 ruby '2.1.6'
 
 group :development do
@@ -42,4 +42,3 @@ gem 'jquery-rails', '~> 3.0.4'
 gem 'pundit'
 
 gem 'faker', '~> 1.2.0'
-gem 'rails_12factor', group: :production

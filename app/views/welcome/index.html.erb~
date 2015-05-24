@@ -13,7 +13,7 @@
     <h2>Maratha</h2>
     <p> We as maratha has glorious history . Our pride as "Maratha" has found an ideologue in the Hindu Maratha Empire, an independent Maratha Empire  established by Maratha warrior and Chh. Shivaji Maharaj after he defeated the Sultanate of Bijapur to free the Marathas and their land from occupation </p>
 <h2>Chh.Shivaji Raje</h2>
-<p><%=image_tag("Shivaji.jpg", alt: "chh.Shivaji Raje")%></p>
+<p><%=image_tag("shiva.png", alt: "chh.Shivaji Raje")%></p>
   </div>
   <div class="col-md-4">
     <h2>Explore</h2>
