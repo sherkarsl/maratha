@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-8">
-    <h1> लोकप्रिय संपादक </h1>
+    <h1> लोकप्रिय संपादक</h1>
     <p class="lead">सर्वाधिक सक्रिय  सदस्य</p>
     <%= render partial: 'users/user', collection: @users %>
     <%= will_paginate @posts %>

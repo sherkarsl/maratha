@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>GHackLabs: The Beta List</title>
+    <meta name="google-site-verification" content="kNNfahTcTtrZuPb2RGDx9x5e6Lry07k_WnLSNo77Fh4" />
+    <title>Maratha 96K: collaboration platform</title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= csrf_meta_tags %>
+    <meta name="keywords" content="Maratha,surname,96k ,devak ,gothra" />
   </head>
   <body>
     <div class="container">
 
       <ul class="nav nav-tabs">
-        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "मुख्यपृष्ठ", root_path %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Discussion topics", topics_path %></li>
         <li><%= link_to "Popular", posts_path %></li>
