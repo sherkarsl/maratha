@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="google-site-verification" content="kNNfahTcTtrZuPb2RGDx9x5e6Lry07k_WnLSNo77Fh4" />
     <title>Maratha 96K: collaboration platform</title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= csrf_meta_tags %>
-    <meta name="keywords" content="Maratha,surname,96k ,devak ,gothra" />
   </head>
   <body>
     <div class="container">
 
       <ul class="nav nav-tabs">
-        <li><%= link_to "मुख्यपृष्ठ", root_path %></li>
-        <li><%= link_to "आमच्या विषयी", about_path %></li>
-        <li><%= link_to "चर्चा विषय", topics_path %></li>
-        <li><%= link_to "लोकप्रिय", posts_path %></li>
-        <li><%= link_to "कार्यक्षम संपादक", users_path %></li>
+        <li><%= link_to raw( t('application.h1')), root_path %></li>
+        <li><%= link_to raw( t('application.h2')), about_path %></li>
+        <li><%= link_to raw( t('application.h3')), topics_path %></li>
+        <li><%= link_to raw( t('application.h4')), posts_path %></li>
+        <li><%= link_to raw( t('application.h5')), users_path %></li>
+
         <div class="pull-right user-info">
+ 	
+
+      	</p>
+	<li><%= link_to_unless_current "English",locale: 'en', class: 'btn btn-primary btn-large' %></li>
+	<li><%= link_to_unless_current "मराठी ",locale:'mn-IN', class: 'btn btn-primary btn-large' %></li>
+      	</p>
+	
 
           <% if current_user %>
             <%= image_tag(current_user.avatar.tiny.url) if current_user.avatar? %>
@@ -32,8 +38,8 @@
             <% end %>
             
           <% else %>
-            <%= link_to "Sign In", new_user_session_path %> or
-            <%= link_to "Sign Up", new_user_registration_path %>
+            <%= link_to  raw( t('index.h6')), new_user_session_path %> or
+            <%= link_to  raw( t('index.h7')), new_user_registration_path %>
           <% end %>
         </div>
       </ul>

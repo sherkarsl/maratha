@@ -1,4 +1,4 @@
-<h1>या सदरातील  एक  प्रकरण  हे एक ९६  कुळी  मराठा आडनाव  दर्शवते.आपले  विचार  किंवा  प्रश्न आपण  संबंधित  आडनावाखाली  वर्ग  करा.</h1>
+<h1> <%= t ('TopicIN.h1')%></h1>
 
 <div class="row">
   <div class="col-md-8">
@@ -26,30 +26,4 @@
     <% end %>
     <%= will_paginate @topics %>
   </div>
-</div>
-
-<body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '699405303515918',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-</body>
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
 </div>

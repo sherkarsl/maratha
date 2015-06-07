@@ -4,7 +4,7 @@ BlocReddit::Application.routes.draw do
 scope "(:locale)", locale: /en|mn-IN/ do
  # resources :books
 #root to: 'welcome#index'
-#end
+end
 
   resources :posts, only: [:index]
   resources :topics do
